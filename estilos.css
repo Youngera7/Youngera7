@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-image:url(extras/photo-1506744038136-46273834b3fb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    min-height: 100vh;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.6);
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+header h1{
+    font-family:'Playfair Display', serif;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.8;
+}
+
+.pricing{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-bottom:80px;
+}
+
+.card{
+    background:white;
+    color:#333;
+    width:300px;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s ease,box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    font-family:'Playfair Display', serif;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:35px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.card ul{
+    list-style:none;
+    margin-bottom:20px;
+}
+
+.card ul li{
+    margin:8px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#c59d5f;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn:hover{
+    background:#a67c3d;
+}
+
+.cta{
+    text-align:center;
+}
+
+.cta h2{
+    font-family:'Playfair Display', serif;
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.7;
+}
+.menu-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 20px;
+    background: transparent;
+    color:white;
+}
+.menu-horizontal p {
+    font-size: 18px;
+    color: white;
+}
+.menu-horizontal a {
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    .card{
+        width: 100%;
+        max-width: 400px;
+    }
+}
